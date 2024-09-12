@@ -4,6 +4,7 @@ import { UserProvider, useUser } from './context/UserContext';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import Catalog from './pages/Catalog';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />
           <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
+          <Route path="/catalog" element={<><Navbar /><Catalog /></>} />
           <Route path="/" element={<Navigate to="/login" replace />} />
         </Routes>
       </Router>

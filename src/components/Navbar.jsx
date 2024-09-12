@@ -28,6 +28,9 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/profile">Profile</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/catalog">Catalogo</Link>
+            </li>
           </ul>
           <div className="d-flex align-items-center">
             {user ? (

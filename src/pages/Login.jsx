@@ -51,7 +51,13 @@ function Login() {
 
   return (
     <GoogleOAuthProvider clientId="998530778811-ouepu0udqaruuituij1jg1hluulog9oh.apps.googleusercontent.com">
-      <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh', backgroundColor: '#f8f9fa' }}>
+      <div 
+        className="d-flex justify-content-center align-items-center" 
+        style={{ 
+          minHeight: '100vh', 
+          background: 'linear-gradient(to right, rgb(255, 126, 95), rgb(100, 176, 166))' 
+        }}
+      >
         <div className="card p-4 shadow-lg" style={{ width: '400px' }}>
           <div className="card-body text-center">
             <h2 className="card-title mb-4">Iniciar Sesión</h2>
